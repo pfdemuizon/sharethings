@@ -18,12 +18,19 @@ role :app, "graspbirdstail.com"
 role :web, "graspbirdstail.com"
 role :db,  "graspbirdstail.com", :primary => true
 
+after "deploy:update_code", "deploy:symlink_shared"
+
 namespace :deploy do
   task :symlink_shared, :roles => :app, :except => {:no_symlink => true} do
     invoke_command "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    invoke_command "ln -nfs #{shared_path}/tmp #{release_path}/tmp"
+    invoke_command "ln -nfs #{shared_path}/pids #{release_path}/pids"
   end
   task :version do
     invoke_command "git --version"
     invoke_command "echo $PATH"
+  end
+  task :restart do
+    invoke_command "touch #{release_path}/tmp/restart.txt"
   end
 end
