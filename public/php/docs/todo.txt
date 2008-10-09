@@ -1,0 +1,37 @@
+- add ability to request something from friends
+- when displaying first page (index.php), check if sharing any items
+  if no items being shared, suggest user to share items.
+- add column for who can borrow item on "My shared things"
+- ask to borrow a thing; send a message 
+- allow for user to set availability of item
+- scheduling of things; like booking resources in outlook; send invitation 
+  (iCalendar is a standard (RFC 2445)
+- give confirmation after saving/deleting data
+- add error checking for dollar value
+- put permissions on "settings" tab to the right
+  * allow for setting all users in a network to a given visibility
+- implement invite page
+- implement guidelines page
+- track no. of transactions taken place
+- cleanup methods for adding app, login, sessions
+- add shared things to profile
+- add shared things to feed
+- add ability to upload photo
+- ask friends if they have a specific item
+- suggest popular items to add; simple check-box interface
+
+- categories:
+	* recreational gear:		sporting equipment, camping gear
+	* musical equipment:		guitar, bass, amp, tamborine, mic, mbox, PA
+	* media: 					CD/DVDs/VHS, books
+	* tools:						drill, hammer, power-saw
+	* kitchen items: 			quisinart, coffee maker, toaster, knife, grater
+	* clothes:					baby clothes, formal dresses, pants, accessories
+	* costumes:					halloween costumes
+	* computers:				laptop, printer, scanner
+	* electronics:				camera, vhs-player, cell-phone
+	* travel:					suit-case, luggage, bags, adapter
+	* furniture:				desk, table, chair
+	* vehicle:					car, motorcycle, snow-mobile
+	* pets:						dog, cat
+	
