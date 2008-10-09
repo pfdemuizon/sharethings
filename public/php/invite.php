@@ -1,5 +1,5 @@
 <?
-include_once '../client/facebook.php';
+include_once 'client/facebook.php';
 include_once 'lib.php';
 include_once 'config.php';
 
