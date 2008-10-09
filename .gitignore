@@ -1,0 +1,5 @@
+config/*.yml
+tmp/*
+log/*
+*.swp
+
