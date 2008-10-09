@@ -1,5 +1,5 @@
 set :application, "sharethings"
-set :repository,  "git@github.com:pfdemuizon/sharethings"
+set :repository,  "git@github.com:pfdemuizon/sharethings.git"
 
 set :user, "pfdemuizon"
 set :group, "pfdemuizon"
@@ -21,5 +21,9 @@ role :db,  "graspbirdstail.com", :primary => true
 namespace :deploy do
   task :symlink_shared, :roles => :app, :except => {:no_symlink => true} do
     invoke_command "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  end
+  task :version do
+    invoke_command "git --version"
+    invoke_command "echo $PATH"
   end
 end
