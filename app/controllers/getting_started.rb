@@ -1,3 +1,0 @@
-class GettingStartedController < ApplicationController
-
-end
