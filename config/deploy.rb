@@ -23,6 +23,7 @@ after "deploy:update_code", "deploy:symlink_shared"
 namespace :deploy do
   task :symlink_shared, :roles => :app, :except => {:no_symlink => true} do
     invoke_command "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    invoke_command "ln -nfs #{shared_path}/config/facebooker.yml #{release_path}/config/facebooker.yml"
     invoke_command "ln -nfs #{shared_path}/config/config.php #{release_path}/public/php/config.php"
     invoke_command "ln -nfs #{shared_path}/tmp #{release_path}/tmp"
     invoke_command "ln -nfs #{shared_path}/pids #{release_path}/pids"
