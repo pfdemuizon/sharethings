@@ -1,0 +1,3 @@
+class GettingStartedController < ApplicationController
+
+end
