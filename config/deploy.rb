@@ -8,7 +8,7 @@ set :group, "pfdemuizon"
 set :scm, :git
 set :git_enable_submodules, 1
 
-set :deploy_to, "/home/pfdemuizon/#{application}"
+set :deploy_to, "/home/pfdemuizon/sites/#{application}"
 
 set :deploy_via, :remote_cache
 set :keep_releases, 10
