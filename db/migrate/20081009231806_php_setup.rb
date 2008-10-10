@@ -3,7 +3,7 @@ class PhpSetup < ActiveRecord::Migration
     create_table :items do |t|
       t.integer   :item_id
       t.integer   :who
-      t.integer   :what
+      t.string    :what
       t.string    :description
       t.float     :value
       t.datetime  :time
