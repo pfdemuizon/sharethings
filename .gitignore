@@ -3,3 +3,4 @@ tmp/*
 log/*.log
 *.swp
 db/*.sqlite3
+doc/status.txt
